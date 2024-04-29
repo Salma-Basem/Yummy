@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yummy</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-black overflow-y-visible">
+   
+    <section class="flex w-20 fixed top-0 bottom-0 left-0 z-50">
+        <!--side Nav Bar-->
+        <div class="flex  side-inner" id="sideNav ">
+            <!--black part in side nav bar-->
+            <div class="bg-black  flex-col justify-between items-stretch relative left-[-100%] flex" id="black-sideNav"> 
+                <div class="m-10">
+                    <ul id="link-list">
+                        <li ><a class="text-white" id="link1" href="search.html">Search</a></li>
+                        <li><a class="text-white" id="link2" href="categories.html" >Categories</a></li>
+                        <li><a class="text-white" id="link" href="area.html">Area</a></li>
+                        <li><a class="text-white"id="link" href="ingredients.html">Ingredients</a></li>
+                        <li><a class="text-white" id="link"href="contactUs.html">Contact Us</a></li>
+                    </ul>
+        
+                </div>
+               
+                <div class="m-10">
+                    <span><i class="fa-brands fa-facebook text-white"></i></span>
+                    <span><i class="fa-brands fa-twitter text-white"></i></span>
+                    <span><i class="fa-solid fa-globe text-white"></i></span>
+                    <h2 class="text-white">Copyright Â© 2019 All Rights
+                        Reserved.</h2>
+                </div>
+            </div>
+    
+           
+            <!--white part in side nav bar-->
+            <div class="w-20 bg-white flex flex-col items-center justify-between left-[-84%]  relative" id="white-sideNav">
+                <img src="images/logo.png" alt="yummy logo" class="w-10 mt-5">
+                <div>
+                    <button id="toggleBtn"><i class="fa-solid fa-bars text-black font-extrabold fa-2x" id="icon1"></i></button>
+                    <button id="crossBtn"><i class="fa-solid fa-xmark text-black font-extrabold fa-2x hidden" id="icon"></i></button>
+                </div>
+                
+                <div class="flex flex-col mb-5">
+                    <span><i class="fa-solid fa-globe cursor-pointer"></i></span>
+                    <span>
+                        <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+      
+
+      </section>
+      <section>
+        <!--Main section-->
+        <div class="bg-black  ">
+            <div class="h-screen flex items-center justify-center flex-row  mx-auto container w-1/2 " id="loading"> 
+                <div >
+                    <i class="fa-solid fa-spinner fa-spin-pulse fa-5x text-white"></i>
+                </div>
+                
+              </div>
+            <div class="mx-auto container mt-12 flex gap-3 flex-row w-10/12 flex-wrap justify-center  " id="ingredients" >
+
+            </div>
+                
+            
+      
+        </div>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/ingredients.js"></script>
+</body>
+</html>
